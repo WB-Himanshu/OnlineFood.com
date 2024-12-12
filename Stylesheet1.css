@@ -1,0 +1,282 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* smooth scrolling */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variable */
+
+:root{
+    --Navigation-height:60px;
+}
+
+/* Navbar styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    z-index:1;
+}
+
+#navbar::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .79;
+}
+
+
+/* Navbar_logo */
+#logo{
+    margin: 5px 10px;
+}
+
+#logo img{
+    height: 65px;
+    width: 165px;
+}  
+
+/* Navbar list styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Gelasio', serif
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    color: white;
+    border-radius: 16px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+}
+
+/*  home section styling */
+
+#home{
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 22px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    background: url(./images/pexels-taryn-elliott-4281748.jpg) center center/cover;
+    height: 570px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .85;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    display: block;
+    width: 50%;
+    margin: 2px auto;
+    font-size: 1.1rem;
+    font-family: 'Gelasio', serif;
+    padding: 1px;
+    color: white;
+    text-align: center;
+}
+/* utility classes */
+
+.h1-primary{
+    margin: 12px;
+    text-align: center;
+    padding: 12px;
+    font-size: 2.8rem;
+    font-family: 'Lora', serif;
+}
+
+.h2-secondary{
+    margin: 10px;
+    padding: 5px 23px;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    background-color: rgb(11, 218, 207);
+    border: 2px solid white;
+    color: white;
+    margin: 20px;
+    padding: 10px 32px;
+    border-radius: 14px;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+}
+
+/* utility classes end  */
+ 
+
+/* Service section  */
+
+#service-container{
+    background-color: rgb(255, 220, 255);
+    height: 475px;
+}
+
+#service{
+    margin: 5px;
+    display: flex;
+}
+
+#service .box{
+    border: 2px solid brown;
+    margin: 10px;
+    padding: 12px;
+    background-color: rgb(247, 210, 143);
+    border-radius: 28px;
+    width: 32%;
+}
+
+#service .box img{
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+
+#service .box p{
+    font-family: 'Clicker Script', cursive;
+    font-weight: 100;
+}
+
+/* client-section */
+
+.clients{
+    height: 180px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients::before{
+    content: "";
+    background: url(./images/pexels-taryn-elliott-4281752.jpg) center center/cover;
+    position: absolute;
+    height: 394px;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.7;
+}
+
+.clients-name {
+    padding: 45px;
+}
+
+.clients-name img{
+    height: 200px;
+}
+
+/* Contact-section */
+
+.contact-box{
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+.contact-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 18px;
+}
+
+.contact-box form input{
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    display: block;
+    width: 60%;
+    margin:  12px auto;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 61.5%;
+    height: 125px;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+}
+
+#contact{
+    height: 365px;
+    position: relative;
+    margin-top: 96px;
+}
+
+#contact::before{
+    content:"";
+    background: url(./images/pexels-karolina-grabowska-4498479.jpg) center/cover;
+    position: absolute;
+    height:530px;
+    width:100%;
+    z-index: -1;
+    opacity: .89;
+    margin-top: 10px;
+}
+
+#contact h1{
+    margin-bottom: -25px;
+}
+
+#contact .submit{
+    display: block;
+    width: 60%;
+    margin:  10px auto;
+    padding: 4px 23px;
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+#contact .submit:hover{
+    background-color:blanchedalmond;
+}
+
+footer{
+    margin-top: 140px;
+}
